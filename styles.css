@@ -10,10 +10,11 @@
 main {grid-area: promo}
 
 body {
+    background-color: #fff;
     display: grid;
     grid-template: 
     'header' 90px
-    'promo' 500px
+    'promo' 550px
     ;
 }
 
@@ -73,14 +74,18 @@ body {
 
 .actions-header-item > button {
     color: #fff;
-    background-color: #67b54b;
+    background-color: #025157;
     padding-left: 14px;
     padding-right: 14px;
     padding-top: 12px;
     padding-bottom: 12px;
     border: 0;
     border-radius: 5px;
+    transition: background-color .2s;
+}
 
+.actions-header-item > button:hover {
+    background-color: #67b54b;
 }
 
 main {
@@ -90,6 +95,7 @@ main {
 
 .promo-container {
     display: flex;
+    flex-direction: row-reverse;
     font-family: Tahoma, sans-serif;
     width: 70%;
     margin: auto;
@@ -100,7 +106,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.video-promo-item > video {
+    outline: none;
+    border-radius: 5px;
+    border: 0;
 }
 
 .video-promo-item img {
@@ -110,15 +122,14 @@ main {
 .publicidad-promo-item h1 {
     color:#025157;
     margin-top: 0;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 40px;
 }
 
 .publicidad-promo-item > p {
     color: #343434;
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     margin-top: 25px;
 }
 
@@ -126,6 +137,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 12px;
 }
 
 .publicidad-promo-item > form p {
@@ -143,6 +155,7 @@ main {
     padding-bottom: 10px;
     border: 0;
     border-radius: 5px;
+    transition: background-color .5s;
 }
 
 .publicidad-promo-item > form input {
