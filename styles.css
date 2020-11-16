@@ -4,17 +4,14 @@
     box-sizing: border-box;
 }
 
-.fixed-header-container {grid-area: header;}
-main {grid-area: promo}
-
 body {
     background-color: #fff;
-    display: grid;
-    align-items: center;
-    grid-template: 
-    'header' 100px
-    'promo' 550px
-    ;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    color:#025157;
+    font-size: 50px;
 }
 
 .fixed-header-container {
@@ -33,7 +30,6 @@ body {
     align-items: center;
     line-height: 50px;
     font-size: 14px;
-    font-family: Verdana;
     text-align: center;
 }
 
@@ -91,10 +87,16 @@ body {
     background-color: #67b54b;
 }
 
+main {
+    margin-top: 220px;
+    font-family: Verdana, sans-serif;
+    align-items: center;
+    width: 100%;
+}
+
 .promo-container {
     display: flex;
     flex-direction: row-reverse;
-    font-family: Verdana, sans-serif;
     align-items: center;
     justify-content: space-around;
     max-width: 1280px;
@@ -115,12 +117,6 @@ body {
 
 .video-promo-item img {
     width: 40%;
-}
-
-.publicidad-promo-item h1 {
-    color:#025157;
-    margin-top: 0;
-    font-size: 50px;
 }
 
 .publicidad-promo-item > p {
@@ -158,6 +154,77 @@ body {
 .publicidad-promo-item-text {
     color: rgba(139,139,139,.8);
     font-size: 12px;
+    line-height: 1.5;
+}
+
+.logos-promo-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logos-promo-container p {
+    color: rgba(139,139,139,.8);
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.logos-promo-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logos-promo-items > img {
+    max-height: 40px;
+    max-width: 100%;
+}
+
+.features {
+    margin-top: 150px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.features > p {
+    margin-bottom: 50px;
+    font-size: 16px;
+} 
+
+.articles-features-container {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+}
+
+.article-features-item {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.article-features-item > img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border:1px solid rgba(139,139,139,.3);
+    box-shadow: -3px 5px rgba(139,139,139,.1);
+}
+
+.article-features-item > h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.article-features-item > p {
+    font-size: 16px;
     line-height: 1.5;
 }
 
