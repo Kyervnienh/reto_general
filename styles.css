@@ -15,65 +15,7 @@ h1 {
     letter-spacing: -1px;
 }
 
-.fixed-header-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: #fffbf7;
-}
-
-.header-container {
-    display: flex;
-    width: 100%;
-    margin: 25px auto;  
-    justify-content: space-around;
-    align-items: center;
-    line-height: 50px;
-    font-size: 14px;
-    text-align: center;
-}
-
-.logo-header-item {
-    width: 15%;
-    height: 50px;
-}
-
-.logo-header-item img {
-    height: 50px;
-}
-
-.nav-header-item {
-    height: 50px;
-}
-
-.nav-header-item > ul li {
-    display: inline;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.nav-header-item > ul li a {
-    text-decoration: none;
-    color: #67b54b;
-}
-
-.actions-header-item {
-    width: 15%;
-}
-
-.actions-header-item > a {
-    text-decoration: none;
-    color: #67b54b;
-    transition: all .2s;
-}
-
-.nav-header-item > ul li a:hover, .actions-header-item > a:hover {
-    text-decoration: underline;
-}
-
-.actions-header-item > button, .footer-subscribe > form button {
+.footer-subscribe > form button {
     color: #fff;
     background-color: #025157;
     padding-left: 14px;
@@ -85,7 +27,7 @@ h1 {
     transition: background-color .2s;
 }
 
-.actions-header-item > button:hover, .footer-subscribe > form button:hover {
+.footer-subscribe > form button:hover {
     background-color: #67b54b;
 }
 
