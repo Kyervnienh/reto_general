@@ -4,20 +4,10 @@ h1 {
     letter-spacing: -1px;
 }
 
-.footer-subscribe > form button {
-    color: #fff;
-    background-color: #025157;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border: 0;
-    border-radius: 5px;
-    transition: background-color .2s;
-}
-
-.footer-subscribe > form button:hover {
-    background-color: #67b54b;
+@media (max-width: 575px) {
+    h1 {
+        font-size: 34px;
+    }
 }
 
 main {
@@ -58,135 +48,6 @@ main {
     background-color:#035157;
 }
 
-.footer-subscribe {grid-area: subscribe;}
-.footer-products {grid-area: products;}
-.footer-matcha {grid-area: matcha;}
-.footer-resources {grid-area: resources;}
-
 footer {
-    display: grid;
-    grid-template: 
-    'subscribe subscribe . products matcha resources' 200px / 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 40px 20px;
-    background-color: #fffbf7 ;
-}
-
-footer h3 {
-    font-size: 14px;
-    font-weight: 500;
-    color: #025157;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-footer p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-}
-
-.footer-subscribe > form input {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid gray;
-    background-color: #fff;
-}
-
-footer a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-    color: #7e7e7e;
-}
-
-@media (max-width:575px) {
-    h1, .tools-card h1 {
-        font-size: 30px;
-    }
-
-    .nav-header-item, .actions-header-item {
-        display: none;
-    }
-
-    .logo-header-item {
-        width: 70%;
-    }
-
-    main {
-        margin-top: 150px;
-    }
-
-    .promo-container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        text-align: center;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .publicidad-promo-item {
-        margin-bottom: 50px;
-    }
-
-    .publicidad-promo-item > p {
-        margin-bottom: 50px;
-        margin-top: 30px;
-    }
-
-    .publicidad-promo-item > form button {
-        margin-bottom: 15px;
-    }
-
-    .publicidad-promo-item > form, .articles-features-container, .tools-card-container {
-        flex-direction: column;
-    }
-
-    .video-promo-item video {
-        width: 90%;
-    }
-
-    .logos-promo-items > img {    
-        margin: 20px;
-    }
-
-    .article-features-item, .tools-card-item {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .features-2-card-1 > h1 {
-        font-size: 28px;
-        margin-top: 100px;
-    }
-
-    .features-2 {
-        grid-template: repeat(4, 1fr)/1fr;
-    }
-
-    .features-2-card-2-image {
-        display: none;
-    }
-
-    .features-2-card-4 {
-        background-image: none;
-    }
-
-    footer {
-        text-align: center;
-        grid-template:
-        'subscribe' 
-        'products' 
-        'matcha' 
-        'resources' 
-        ;
-    }
-
-    footer section {
-        margin: 20px 0;
-    }
+    background-color: #fffbf7;
 }
