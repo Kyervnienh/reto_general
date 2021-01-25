@@ -76,13 +76,11 @@ h1 {
 .actions-header-item > button, .footer-subscribe > form button {
     color: #fff;
     background-color: #025157;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 14px;
     border: 0;
     border-radius: 5px;
     transition: background-color .2s;
+    outline: none;
 }
 
 .actions-header-item > button:hover, .footer-subscribe > form button:hover {
@@ -146,6 +144,7 @@ main {
     margin-right: 15px;
     border: 0;
     border-radius: 5px;
+    outline: none;
 }
 
 .publicidad-promo-item > form img {
@@ -209,12 +208,28 @@ main {
     margin-left: 15px;
 }
 
-.article-features-item > img {
+.article-features-item > figure{
     width: 100%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border:1px solid rgba(139,139,139,.3);
-    box-shadow: -3px 5px rgba(139,139,139,.1);
+    margin-bottom: 30px;
+    border-radius: 9px;
+    border:1px solid #dadada;
+    box-shadow: 0 8px 24px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.article-features-item > figure img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    transition: all .3s ease-in-out;
+}
+
+.article-features-item > figure img:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+.article-features-item > figure .embed-left:hover {
+    transform: scale(1.03) rotate(-1deg);
 }
 
 .article-features-item > h3 {
@@ -438,15 +453,35 @@ footer p {
     margin-bottom: 30px;
 }
 
-.footer-subscribe > form input {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
+.footer-subscribe > form {
+    display: flex;
+}
+
+.footer-subscribe-input {
+    margin-right: 0;
+}
+
+.footer-subscribe > form > .footer-subscribe-input input {
+    border-left: 1px solid #025157;
+    border-top: 1px solid #025157;
+    border-bottom: 1px solid #025157;
+    border-right: 0;
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 48px;
+    width: 100%!important;
+    color: #4a4a4a;
+    padding: 10px 14px;
     outline: none;
-    border: 1px solid gray;
     background-color: #fff;
+    font-size: 15px;
+    letter-spacing: -.5px;
+}
+
+.footer-subscribe > form button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 footer a {
