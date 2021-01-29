@@ -21,13 +21,13 @@ h1 {
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: #fffbf7;
+    background-color: #fff;
 }
 
 .header-container {
     display: flex;
     width: 100%;
-    margin: 25px auto;  
+    margin: 15px auto;  
     justify-content: space-around;
     align-items: center;
     line-height: 50px;
@@ -175,13 +175,16 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    margin: auto;
+    max-width: 1280px;
+    margin:auto 0;
+    padding: 0 15px;
 }
 
 .logos-promo-items > img {
-    max-height: 40px;
     max-width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    margin: auto 0;
 }
 
 .features {
@@ -538,9 +541,9 @@ footer a {
         width: 90%;
     }
 
-    .logos-promo-items > img {    
-        margin: 20px;
-    }
+    /* .logos-promo-items > img {    
+        margin: auto 10px;
+    } */
 
     .article-features-item, .tools-card-item {
         width: 90%;
