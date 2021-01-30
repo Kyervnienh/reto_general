@@ -6,13 +6,23 @@
 
 body {
     background-color: #fff;
-    font-family: Verdana, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+button {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
 }
 
 h1 {
     color:#025157;
-    font-size: 50px;
-    letter-spacing: -1px;
+    font-size: 60px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    /* letter-spacing: 2px; */
+    line-height: 1;
 }
 
 .fixed-header-container {
@@ -31,7 +41,6 @@ h1 {
     justify-content: space-around;
     align-items: center;
     line-height: 50px;
-    font-size: 14px;
     text-align: center;
 }
 
@@ -66,7 +75,7 @@ h1 {
 .actions-header-item > a {
     text-decoration: none;
     color: #67b54b;
-    transition: all .2s;
+    transition: all .2s ease-in-out;
 }
 
 .nav-header-item > ul li a:hover, .actions-header-item > a:hover {
@@ -75,12 +84,15 @@ h1 {
 
 .actions-header-item > button, .footer-subscribe > form button {
     color: #fff;
+    font-weight: 600;
     background-color: #025157;
     padding: 12px 14px;
+    margin-left: 20px;
     border: 0;
-    border-radius: 5px;
-    transition: background-color .2s;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
     outline: none;
+    cursor: pointer;
 }
 
 .actions-header-item > button:hover, .footer-subscribe > form button:hover {
@@ -89,7 +101,6 @@ h1 {
 
 main {
     margin-top: 220px;
-    font-family: Verdana, sans-serif;
     align-items: center;
     width: 100%;
 }
@@ -101,6 +112,8 @@ main {
     justify-content: space-around;
     max-width: 1280px;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .video-promo-item {
@@ -120,31 +133,30 @@ main {
 }
 
 .publicidad-promo-item > p {
-    color: #343434;
-    font-size: 16px;
+    color: #46484c;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 1.5;
     margin-bottom: 20px;
     margin-top: 20px;
+    max-width: 650px;
 }
 
 .publicidad-promo-item > form {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    font-size: 14px;
 }
 
 .publicidad-promo-item > form button {
     color: #fff;
     background-color:#67b54b;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 14px;
     margin-right: 15px;
     border: 0;
     border-radius: 5px;
     outline: none;
+    cursor: pointer;
 }
 
 .publicidad-promo-item > form img {
@@ -154,7 +166,9 @@ main {
 
 .publicidad-promo-item-text {
     color: rgba(139,139,139,.8);
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -.5px;
     line-height: 1.5;
 }
 
@@ -164,9 +178,10 @@ main {
 }
 
 .logos-promo-container p {
-    color: rgba(139,139,139,.8);
-    font-size: 14px;
-    letter-spacing: 1px;
+    opacity: .4;
+    font-size: 13px;
+    letter-spacing: 1.4px;
+    font-weight: 700;
     margin-bottom: 40px;
 }
 
@@ -176,7 +191,7 @@ main {
     justify-content: space-around;
     align-items: center;
     max-width: 1280px;
-    margin:auto 0;
+    margin:auto;
     padding: 0 15px;
 }
 
@@ -194,19 +209,19 @@ main {
 }
 
 .features > p {
+    margin-top: 20px;
     margin-bottom: 50px;
-    font-size: 16px;
 } 
 
 .articles-features-container {
     display: flex;
-    width: 85%;
+    max-width: 1280px;
     margin: auto;
     justify-content: center;
 }
 
 .article-features-item {
-    width: 30%;
+    width: 31%;
     margin-right: 15px;
     margin-left: 15px;
 }
@@ -235,16 +250,25 @@ main {
     transform: scale(1.03) rotate(-1deg);
 }
 
-.article-features-item > h3 {
+.article-features-item > a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s ease-in-out;
+}
+
+.article-features-item > a:hover {
+    color: #67b54b;
+}
+
+.article-features-item > a h3 {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     letter-spacing: -.5px;
 }
 
 .article-features-item > p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
 }
 
 .tools-card {
@@ -485,6 +509,7 @@ footer p {
 .footer-subscribe > form button {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    margin: 0;
 }
 
 footer a {
